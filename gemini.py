@@ -1,4 +1,3 @@
-```python
 from strands import Agent
 from strands.models.gemini import GeminiModel
 from strands_tools import calculator
@@ -14,4 +13,3 @@ model = GeminiModel(
     }
 )
 
-```

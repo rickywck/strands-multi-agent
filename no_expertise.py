@@ -1,4 +1,3 @@
-```python
 from strands import Agent, tool
 import json
 
@@ -63,4 +62,3 @@ def general_assistant(query: str) -> str:
     except Exception as e:
         # Return error message
         return f"Error processing your question: {str(e)}"
-```

@@ -1,5 +1,3 @@
-```python
-#!/usr/bin/env python3
 """
 # 📁 Teacher's Assistant Strands Agent
 
@@ -21,7 +19,8 @@ from gemini import model
 import os
 import base64
 from strands.telemetry import StrandsTelemetry
-  
+
+'''  
 # Build Basic Auth header.
 LANGFUSE_AUTH = base64.b64encode(
     f"{os.environ.get('LANGFUSE_PUBLIC_KEY')}:{os.environ.get('LANGFUSE_SECRET_KEY')}".encode()
@@ -30,6 +29,10 @@ LANGFUSE_AUTH = base64.b64encode(
 # Configure OpenTelemetry endpoint & headers
 os.environ["OTEL_EXPORTER_OTLP_ENDPOINT"] = os.environ.get("LANGFUSE_BASE_URL") + "/api/public/otel"
 os.environ["OTEL_EXPORTER_OTLP_HEADERS"] = f"Authorization=Basic {LANGFUSE_AUTH}"
+'''
+
+os.environ["OTEL_EXPORTER_OTLP_ENDPOINT"] = "http://localhost:4318"
+
 
 # Configure the telemetry
 # (Creates new tracer provider and sets it as global)
@@ -114,4 +117,3 @@ if __name__ == "__main__":
             print(f"\nAn error occurred: {str(e)}")
             print("Please try asking a different question.")
 
-```

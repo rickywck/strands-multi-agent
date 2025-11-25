@@ -1,4 +1,3 @@
-```python
 # Import RAGAS libraries
 from ragas.llms import LangchainLLMWrapper
 from langfuse import Langfuse
@@ -373,4 +372,3 @@ if __name__ == "__main__":
         if "conversation_results" in results and results["conversation_results"] is not None:
             print("\nConversation Evaluation Summary:")
             print(results["conversation_results"].describe())
-```

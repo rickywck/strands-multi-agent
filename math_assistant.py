@@ -1,4 +1,3 @@
-```python
 from strands import Agent, tool
 from strands_tools import calculator
 import json
@@ -61,4 +60,3 @@ def math_assistant(query: str) -> str:
     except Exception as e:
         # Return specific error message for math processing
         return f"Error processing your mathematical query: {str(e)}"
-```

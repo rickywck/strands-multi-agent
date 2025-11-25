@@ -1,4 +1,3 @@
-```python
 from strands import Agent, tool
 from strands_tools import http_request
 import json
@@ -62,4 +61,3 @@ def language_assistant(query: str) -> str:
     except Exception as e:
         # Return specific error message for language processing
         return f"Error processing your language query: {str(e)}"
-```

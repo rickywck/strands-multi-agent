@@ -1,4 +1,3 @@
-```python
 from strands import Agent, tool
 from strands_tools import file_read, file_write, editor
 import json
@@ -63,4 +62,3 @@ def english_assistant(query: str) -> str:
     except Exception as e:
         # Return specific error message for English queries
         return f"Error processing your English language query: {str(e)}"
-```

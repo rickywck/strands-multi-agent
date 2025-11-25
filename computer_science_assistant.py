@@ -1,4 +1,3 @@
-```python
 from strands import Agent, tool
 from strands_tools import python_repl, shell, file_read, file_write, editor
 import json
@@ -67,4 +66,3 @@ def computer_science_assistant(query: str) -> str:
     except Exception as e:
         # Return specific error message for computer science processing
         return f"Error processing your computer science query: {str(e)}"
-```
